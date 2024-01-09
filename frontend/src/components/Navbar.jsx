@@ -21,8 +21,8 @@ const Navbar = () => {
     <header className="max-w-screen-2xl container mx-auto xl:px-24 px-4">
       <nav className="flex justify-between items-center py-6">
         <a href="/" className="flex items-center gap-2 text-2xl text-black">
-          <img src={Vagas} alt="Portal de Empregos" width={50} />
-          <span>Portal de Empregos</span>
+          <img src={Vagas} alt="ODS Empregos" width={50} />
+          <span>ODS Empregos</span>
         </a>
 
         {/** nav items for large devices */}
