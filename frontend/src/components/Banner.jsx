@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { TfiSearch, TfiLocationPin } from "react-icons/tfi";
 
-const Banner = () => {
-  const [query, setQuery] = useState("");
-
+const Banner = ({ query, handleInputChange }) => {
   return (
     <div className="max-w-screen-2xl container mx-auto xl:px-24 px-4 md:py-20 py-14">
       <h1 className="text-5xl font-bold text-primary mb-3">
@@ -22,7 +20,7 @@ const Banner = () => {
               id="title"
               placeholder="Encontre sua vaga!"
               className="block flex-1 border-0 bg-transparent py-1.5 pl-8 text-gray-900 placeholder:text-gray-400 focus:right-0 sm:text-sm sm:leading-6"
-              onChange={(e) => setQuery(e.target.value)}
+              onChange={handleInputChange}
               value={query}
             />
             <TfiSearch className="absolute mt-2.5 ml-2 text-gray-400" />
@@ -34,8 +32,6 @@ const Banner = () => {
               id="title"
               placeholder="Cidade"
               className="block flex-1 border-0 bg-transparent py-1.5 pl-8 text-gray-900 placeholder:text-gray-400 focus:right-0 sm:text-sm sm:leading-6"
-              // onChange={(e) => setQuery(e.target.value)}
-              value={""}
             />
             <TfiLocationPin className="absolute mt-2.5 ml-2 text-gray-400" />
           </div>
