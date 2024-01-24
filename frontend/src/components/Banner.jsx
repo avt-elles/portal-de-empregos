@@ -5,7 +5,8 @@ const Banner = ({ query, handleInputChange }) => {
   return (
     <div className="max-w-screen-2xl container mx-auto xl:px-24 px-4 md:py-20 py-14">
       <h1 className="text-5xl font-bold text-primary mb-3">
-        Encontre seu <span className="text-blue"> novo emprego</span> hoje
+        Encontre seu
+        <span className="text-blue"> novo emprego </span> hoje
       </h1>
       <p className="text-lg text-black/70 mb-8">
         As melhores vagas para profissionais da área de tecnologia, engenharia e
